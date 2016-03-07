@@ -1,0 +1,23 @@
+{
+    "name": "sofa15/anax-mvc-content",    
+    "type": "library",
+    "description": "Module for handling content in Anax-MVC",
+    "keywords": ["content", "blog", "mvc", "micro", "education"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sofia Fahlesson",
+            "email": "sofiafahlesson@live.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "mos/cdatabase": "dev-master",
+        "mos/cform": "2.x-dev"
+    },
+    "autoload": {
+        "psr-4": { "Anax\\": "src/" }
+    }
+}
