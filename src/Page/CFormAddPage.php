@@ -89,7 +89,7 @@ class CFormAddPage extends \Mos\HTMLForm\CForm
     public function callbackSuccess()
     {
         $this->AddOUtput("<p><i>Form was submitted and the page was added successfully.</i></p>");
-        $this->redirectTo();
+        $this->redirectTo('page/list');
     }
 
 
