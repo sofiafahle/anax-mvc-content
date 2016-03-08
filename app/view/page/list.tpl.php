@@ -15,4 +15,4 @@
 <?php endforeach; ?>
 
 <br>
-<p><a href='<?=$this->url->create('page/active')?>'>Active pages</a> | <a href='<?=$this->url->create('page/inactive')?>'>Inactive pages</a> | <a href='<?=$this->url->create('page/trash')?>'>Deleted pages</a> | <a href='<?=$this->url->create('page/setup')?>'>Reset</a></p>
+<p><a href='<?=$this->url->create('page/add')?>'>Add page</a> | <a href='<?=$this->url->create('page/active')?>'>Active pages</a> | <a href='<?=$this->url->create('page/inactive')?>'>Inactive pages</a> | <a href='<?=$this->url->create('page/trash')?>'>Deleted pages</a> | <a href='<?=$this->url->create('page/setup')?>'>Reset</a></p>

@@ -15,4 +15,4 @@
 <?php endforeach; ?>
  
 <br>
-<p><a href='<?=$this->url->create('page/list')?>'>All pages</a> | <a href='<?=$this->url->create('page/setup')?>'>Reset</a></p>
+<p><a href='<?=$this->url->create('page/list')?>'>All pages</a>

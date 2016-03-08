@@ -15,4 +15,4 @@
 <?php endforeach; ?>
  
 <br>
-<p><a href='<?=$this->url->create('blog/list')?>'>All blogs</a> | <a href='<?=$this->url->create('blog/setup')?>'>Reset</a></p>
+<p><a href='<?=$this->url->create('blog/list')?>'>All blogs</a>

@@ -28,15 +28,15 @@ class CDIFactoryContent extends CDIFactoryDefault
 			return $form;
 		});
 		
-		$di->set('pageController', function() use ($di) {
+		$this->setShared('pageController', function() {
 			$pageController = new \Anax\Page\PageController();
-			$pageController->setDI($di);
+			$pageController->setDI($this);
 			return $pageController;
 		});
 		
-		$di->set('blogController', function() use ($di) {
+		$this->setShared('blogController', function() {
 			$blogController = new \Anax\Blog\BlogController();
-			$blogController->setDI($di);
+			$blogController->setDI($this);
 			return $blogController;
 		});
     }

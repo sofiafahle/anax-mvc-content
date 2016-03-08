@@ -72,7 +72,7 @@ Duis nisl turpis, tempor et rutrum at, bibendum et mi. Morbi luctus libero id su
 			$now
 		]);
 		
-		$this->redirectTo('blog');
+		$this->redirectTo('blog/list');
 	}
 	
 	public function indexAction()

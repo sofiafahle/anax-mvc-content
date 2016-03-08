@@ -15,4 +15,4 @@
 <?php endforeach; ?>
 
 <br>
-<p><a href='<?=$this->url->create('blog/active')?>'>Active blogs</a> | <a href='<?=$this->url->create('blog/inactive')?>'>Inactive blogs</a> | <a href='<?=$this->url->create('blog/trash')?>'>Deleted blogs</a> | <a href='<?=$this->url->create('blog/setup')?>'>Reset</a></p>
+<p><a href='<?=$this->url->create('blog/add')?>'>Add post</a> | <a href='<?=$this->url->create('blog/active')?>'>Active blogs</a> | <a href='<?=$this->url->create('blog/inactive')?>'>Inactive blogs</a> | <a href='<?=$this->url->create('blog/trash')?>'>Deleted blogs</a> | <a href='<?=$this->url->create('blog/setup')?>'>Reset</a></p>
