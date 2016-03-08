@@ -74,7 +74,6 @@ class CFormAddPage extends \Mos\HTMLForm\CForm
 			'slug'		=> $this->page->slugify($this->Value('title')),
 			'filter' 	=> htmlentities($this->Value('filter')),
 			'created'	=> $now,
-			'active'	=> $now,
 		]);
 		
         $this->saveInSession = true;

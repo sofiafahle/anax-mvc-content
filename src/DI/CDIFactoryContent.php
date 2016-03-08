@@ -28,13 +28,13 @@ class CDIFactoryContent extends CDIFactoryDefault
 			return $form;
 		});
 		
-		$this->setShared('pageController', function() {
+		$this->setShared('PageController', function() {
 			$pageController = new \Anax\Page\PageController();
 			$pageController->setDI($this);
 			return $pageController;
 		});
 		
-		$this->setShared('blogController', function() {
+		$this->setShared('BlogController', function() {
 			$blogController = new \Anax\Blog\BlogController();
 			$blogController->setDI($this);
 			return $blogController;

@@ -81,7 +81,6 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
 			'slug'		=> $this->blog->slugify($this->Value('title')),
 			'filter' 	=> htmlentities($this->Value('filter')),
 			'created'	=> $now,
-			'active'	=> $now,
 		]);
 		
         $this->saveInSession = true;
