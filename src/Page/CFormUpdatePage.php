@@ -48,6 +48,7 @@ class CFormUpdatePage extends \Mos\HTMLForm\CForm
 			'filter' => [
                 'type'        => 'text',
                 'label'       => 'Filter:',
+				'description' => 'separated by comma, no spaces',
 				'value'       => $page->filter,
             ],
             'submit' => [

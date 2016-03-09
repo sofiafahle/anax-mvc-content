@@ -40,6 +40,7 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
 			'filter' => [
                 'type'        => 'text',
                 'label'       => 'Filter:',
+				'description' => 'separated by comma, no spaces',
             ],
             'submit' => [
                 'type'      => 'submit',

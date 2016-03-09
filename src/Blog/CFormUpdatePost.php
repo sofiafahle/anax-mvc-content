@@ -56,6 +56,7 @@ class CFormUpdatePost extends \Mos\HTMLForm\CForm
 			'filter' => [
                 'type'        => 'text',
                 'label'       => 'Filter:',
+				'description' => 'separated by comma, no spaces',
 				'value'       => $blog->filter,
             ],
             'submit' => [
