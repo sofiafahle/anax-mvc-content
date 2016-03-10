@@ -80,7 +80,7 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
 			'title' 	=> htmlentities($this->Value('title'), null, 'UTF-8'),
             'content'	=> htmlentities($this->Value('content'), null, 'UTF-8'),
 			'slug'		=> $this->blog->slugify($this->Value('title')),
-			'filter' 	=> htmlentities($this->Value('filter')),
+			'filter' 	=> $this->Value('filter') ? htmlentities($this->Value('filter')) : '',
 			'created'	=> $now,
 		]);
 		
@@ -97,7 +97,7 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
     public function callbackSuccess()
     {
         $this->AddOUtput("<p><i>Form was submitted and the post was added successfully.</i></p>");
-        $this->redirectTo();
+        $this->redirectTo('blog/list');
     }
 
 

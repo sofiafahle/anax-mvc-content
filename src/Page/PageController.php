@@ -60,16 +60,13 @@ class PageController implements \Anax\DI\IInjectionAware
 	 */
 	public function viewAction($slug = null)
 	{
-		$page = $this->page->findWhere('slug', $slug);
+		$pages = $this->page->findWhere('slug', $slug);
 		
-		if (!$page) {
+		if (!$pages) {
 			die('No such page!');
 		}
 		
-		var_dump($page);
-		$page = $page[0];
-	 	
-		var_dump($page);
+		$page = $pages[0];
 		
 		$this->theme->setTitle($page->title);
 		$this->views->add('page/view', [

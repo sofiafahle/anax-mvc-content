@@ -31,7 +31,7 @@ class BlogController implements \Anax\DI\IInjectionAware
 	
 	public function indexAction()
 	{
-		$all = $this->blog->findAll();
+		$all = $this->blog->findAllOrder('id', 'DESC');
 	 
 		$this->theme->setTitle("A blog");
 		$this->views->add('blog/view-blog', [

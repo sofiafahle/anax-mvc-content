@@ -71,6 +71,24 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 	}
 	
 	/**
+	 * Find and return rows in specific order.
+	 *
+	 * @param string $column as key for condition
+	 * @param string $order as order to sort in, ASC or DESC.
+	 *
+	 * @return array
+	 */
+	public function findAllOrder($column, $order) {
+		$this->db->select()
+				 ->from($this->getSource())
+				 ->orderBy($column . ' ' . $order);
+		
+		$this->db->execute();
+		$this->db->setFetchModeClass(__CLASS__);
+		return $this->db->fetchAll();
+	}
+	
+	/**
 	 * Get object properties.
 	 *
 	 * @return array with object properties.
