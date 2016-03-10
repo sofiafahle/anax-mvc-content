@@ -91,9 +91,9 @@ class CFormUpdatePost extends \Mos\HTMLForm\CForm
 		
 		$this->blog->save([
 			'id' 		=> $this->Value('id'),
-			'author' 	=> htmlentities($this->Value('author')),
-			'title' 	=> htmlentities($this->Value('title')),
-            'content'	=> htmlentities($this->Value('content')),
+			'author' 	=> htmlentities($this->Value('author'), null, 'UTF-8'),
+			'title' 	=> htmlentities($this->Value('title'), null, 'UTF-8'),
+            'content'	=> htmlentities($this->Value('content'), null, 'UTF-8'),
 			'slug'		=> $this->blog->slugify($this->Value('title')),
 			'filter' 	=> htmlentities($this->Value('filter')),
 			'updated'	=> $now,

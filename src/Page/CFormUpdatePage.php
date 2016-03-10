@@ -86,8 +86,8 @@ class CFormUpdatePage extends \Mos\HTMLForm\CForm
 		
 		$this->page->save([
 			'id'		=> $this->Value('id'),
-			'title' 	=> htmlentities($this->Value('title')),
-            'content'	=> htmlentities($this->Value('content')),
+			'title' 	=> htmlentities($this->Value('title'), null, 'UTF-8'),
+            'content'	=> htmlentities($this->Value('content'), null, 'UTF-8'),
 			'slug'		=> $this->page->slugify($this->Value('title')),
 			'filter' 	=> htmlentities($this->Value('filter')),
 			'updated'	=> $now,

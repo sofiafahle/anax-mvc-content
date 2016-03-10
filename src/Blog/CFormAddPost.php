@@ -76,9 +76,9 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
 		$now = gmdate('Y-m-d H:i:s');
 		
 		$this->blog->save([
-			'author' 	=> htmlentities($this->Value('author')),
-			'title' 	=> htmlentities($this->Value('title')),
-            'content'	=> htmlentities($this->Value('content')),
+			'author' 	=> htmlentities($this->Value('author'), null, 'UTF-8'),
+			'title' 	=> htmlentities($this->Value('title'), null, 'UTF-8'),
+            'content'	=> htmlentities($this->Value('content'), null, 'UTF-8'),
 			'slug'		=> $this->blog->slugify($this->Value('title')),
 			'filter' 	=> htmlentities($this->Value('filter')),
 			'created'	=> $now,

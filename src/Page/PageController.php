@@ -66,8 +66,11 @@ class PageController implements \Anax\DI\IInjectionAware
 			die('No such page!');
 		}
 		
+		var_dump($page);
 		$page = $page[0];
-	 
+	 	
+		var_dump($page);
+		
 		$this->theme->setTitle($page->title);
 		$this->views->add('page/view', [
 			'page' => $page,
