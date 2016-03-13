@@ -226,9 +226,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 	}
 	
 	/**
-	 * Delete all rows with where condition.
-	 *
-	 * @param string $page to delete from.
+	 * Delete all rows.
 	 *
 	 * @return boolean true or false if deleting went okey.
 	 */
@@ -288,7 +286,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 	/**
 	 * Execute the query built.
 	 *
-	 * @param string $query custom query.
+	 * @param array $params for custom query.
 	 *
 	 * @return $this
 	 */

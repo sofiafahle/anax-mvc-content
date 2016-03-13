@@ -10,7 +10,8 @@ class CFormAddPage extends \Mos\HTMLForm\CForm
 {
     use \Anax\DI\TInjectionaware,
         \Anax\MVC\TRedirectHelpers;
-		
+	
+	public $page;
 
     /**
      * Constructor
@@ -70,8 +71,8 @@ class CFormAddPage extends \Mos\HTMLForm\CForm
 		$now = gmdate('Y-m-d H:i:s');
 		
 		$this->page->save([
-			'title' 	=> htmlentities($this->Value('title', null, 'UTF-8')),
-            'content'	=> htmlentities($this->Value('content', null, 'UTF-8')),
+			'title' 	=> htmlentities($this->Value('title'), null, 'UTF-8'),
+            'content'	=> htmlentities($this->Value('content'), null, 'UTF-8'),
 			'slug'		=> $this->page->slugify($this->Value('title')),
 			'filter' 	=> $this->Value('filter') ? htmlentities($this->Value('filter')) : '',
 			'created'	=> $now,

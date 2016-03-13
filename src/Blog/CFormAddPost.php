@@ -10,7 +10,8 @@ class CFormAddPost extends \Mos\HTMLForm\CForm
 {
     use \Anax\DI\TInjectionaware,
         \Anax\MVC\TRedirectHelpers;
-		
+	
+	public $blog;
 
     /**
      * Constructor

@@ -11,7 +11,8 @@ class CFormUpdatePage extends \Mos\HTMLForm\CForm
     use \Anax\DI\TInjectionaware,
         \Anax\MVC\TRedirectHelpers;
 		
-
+	public $page;
+	
     /**
      * Constructor
      *
