@@ -5,6 +5,7 @@
     "keywords": ["content", "blog", "mvc", "micro", "education"],
     "homepage": "http://dbwebb.se",
     "license": "MIT",
+	"minimum-stability": "dev",
     "authors": [
         {
             "name": "Sofia Fahlesson",
@@ -14,7 +15,8 @@
     ],
     "require": {
         "php": ">=5.4",
-	"mos/cdatabase": "0.1.1",
+		"anax/mvc": "dev-master",
+		"mos/cdatabase": "0.1.1",
         "mos/cform": "2.x-dev"
     },
     "autoload": {
